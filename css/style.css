@@ -780,3 +780,138 @@ body.lock {
 	top: 0px;
 	transform: rotate(30deg);
 }
+
+/*?===================body-statistics-experts==========================*/
+
+.body-statistics-experts {
+	padding: 25px 80px;
+	display: flex;
+	align-items: center;
+}
+
+.body-statistics-experts__item {
+	flex: 0 1 25%;
+	text-align: center;
+}
+
+.body-statistics-experts__item:last-child {
+	flex: 0 1 50%;
+}
+
+.body-statistics-experts__value {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	color: #ec5863;
+}
+
+.body-statistics-experts__value:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.body-statistics-experts__text {
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 1.8;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+@media (max-width: 767.98px) {
+	.body-statistics-experts {
+		padding: 25px;
+	}
+	.statistics-experts__body {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 479.98px) {
+	.body-statistics-experts {
+		flex-direction: column;
+	}
+
+	.body-statistics-experts__item:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+/*?===================healthycare==========================*/
+
+.healthycare {
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+
+.healthycare__container {
+}
+
+.healthycare__block-text {
+	margin-bottom: 45px;
+}
+
+.healthycare__items {
+	display: flex;
+	max-width: 980px;
+	margin: 0 auto;
+	gap: 72px;
+}
+
+.healthycare__item {
+	flex: 0 1 33.333%;
+}
+
+.healthycare__column {
+	position: relative;
+}
+
+.healthycare__column_1::before,
+.healthycare__column_1::after {
+	content: "";
+	position: absolute;
+	background-color: #ec5863;
+	border-radius: 16px;
+}
+
+.healthycare__column_1::before {
+	width: 65px;
+	height: 65px;
+	bottom: -35px;
+	left: -17px;
+	transform: rotate(-30deg);
+}
+
+.healthycare__column_1::after {
+	width: 97px;
+	height: 97px;
+	top: 30px;
+	right: -61px;
+	border-radius: 30px;
+	transform: rotate(30deg);
+}
+
+.healthycare__column_2::after {
+	content: "";
+	position: absolute;
+	background-color: #ec5863;
+	width: 127px;
+	height: 127px;
+	bottom: -10px;
+	right: -80px;
+	border-radius: 30px;
+	transform: rotate(55deg);
+}
+
+.healthycare__column_3::after {
+	content: "";
+	position: absolute;
+	background-color: #ec5863;
+	width: 65px;
+	height: 65px;
+	top: -30px;
+	right: -21px;
+	border-radius: 16px;
+	transform: rotate(-30deg);
+}
